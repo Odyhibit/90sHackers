@@ -5,7 +5,7 @@
     width: 100%;
     height: 150px;
     background-color: #252525;
-    background-image: "assets/hackers_group.png";
+    background-image: linear-gradient(to right, #252525, #252525, #17f3f3, #252525, #252525);
     box-sizing: border-box;
     margin:0,0,0,0;
 }
@@ -21,6 +21,7 @@
     font-family: "Press Start 2P", system-ui;
     color: #17f3f3;
     flex-grow: 1;
+    background-image: "assets/hackers_group.png";
     text-align: center;
     font-size: 24px;
     font-weight: bold;
@@ -34,6 +35,7 @@ body {
 }
 .top-section{
     background-image: url("assets/gibson.png");
+    background-attachment: fixed;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
