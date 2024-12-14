@@ -3,15 +3,18 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 100px;
-    background-color: #30145c;
+    height: 150px;
+    background-color: #252525;
+    background-image: "assets/hackers_group.png";
     box-sizing: border-box;
-    margin:0,0,0, 100px;
+    margin:0,0,0,0;
 }
 
 .header img {
-    height: 80px;
+    height: 150px;
     object-fit: contain;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .header .center-text {
@@ -25,11 +28,26 @@
 
 body {
     font-family: "Press Start 2P", system-ui;
+    background-color: #252525;
     color: #000080;
+    margin: 0;
+}
+.top-section{
     background-image: url("assets/img_0794.jpeg");
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0;
+    padding-top: 100px;
+    height: 800px;
+}
+.bottom-section{
+    background-color: #252525;
+    background-image: url("assets/hackers_group.png");
+    background-repeat: no-repeat;
+    background-size: fit;
+    color: #17f3f3;
+    text-align: center;
+    height: 1000px;
 }
 .press-start-2p-regular {
     font-family: "Press Start 2P", system-ui;
@@ -38,47 +56,57 @@ body {
 }
 label{
     font-family: "Press Start 2P", system-ui;
+    color:#d2d8b2;
     margin-top:25px;
     display:inline-block;
 }
 .container {
     width: 600px;
-    margin: 80 auto;
-    border: 3px solid #ff4500;
-    background-color: #ffffe0;
-    
+    margin: 80px auto;
+    border: 3px solid #21dae7;
+    background-color: #133750;    
     padding: 20px;
-    box-shadow: 5px 5px 15px #888;
+    box-shadow: 5px 5px 15px #d9e2c1;
 }
+
+.container img{
+    display: inline;
+    float: left;
+}
+
 textarea {
     font-family: "Press Start 2P", system-ui;
     width: 100%;
     height: 100px;
     margin: 10px 0;
-    font-family: "Courier New", Courier, monospace;
-    background-color: #f0f8ff;
-    border: 2px solid #008000;
-    color: #000080;
+    line-height: 2.0;
+    background-color: #192836;
+    border: 2px solid #21dae7;
+    color: #d2d8b2;
+}
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Space out buttons across the full width */
+    width: 100%; /* Span the entire width */
+    padding: 10px; /* Optional padding for spacing */
+    box-sizing: border-box; /* Include padding in the total width */
 }
 button {
     font-family: "Press Start 2P", system-ui;
-    display: block;
-    width: 100%;
     padding: 10px;
     background-color: #ffa500;
     color: #000;
     font-weight: bold;
-    border: 2px solid #ff4500;
+    border: 2px solid #ff5e00;
     cursor: pointer;
 }
 button:hover {
     font-family: "Press Start 2P", system-ui;
-    background-color: #ff6347;
+    background-color: #ff6b00;
     color: #fff;
 }
 h1 {
     font-family: "Press Start 2P", system-ui;
-    text-align: center;
-    color: #ff4500;
+    color: #ff6b00;
     font-size: 32px;
 }

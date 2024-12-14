@@ -6,25 +6,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <title>Input and Output Example</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="text/javascript"></script>
+    <title>Talk like a hacker!</title>
 
 </head>
 <body>
     <header class="header">
-        <img src="left-image.png" alt="Left Image">
-        <div class="center-text">Centered Header Text</div>
-        <img src="right-image.png" alt="Right Image">
+        <img src="assets/crash_over-ride.png" alt="crash over-ride Image">
+        <div class="center-text">
+            <img src="assets/hack-the-planet.png" alt="hack the planet Image">
+        </div>
+        <img src="assets/acid_burn.png" alt="acid burn Image">
     </header>
-    <div class="container">
-        <h1>Text Transformer</h1>
-        <label for="inputText">Input Text:</label>
-        <textarea id="inputText" placeholder="Enter your text here..."></textarea>
+    <div class="top-section">
+        <div class="container">
+            <div class="box-title">
+                <img src="assets/small_hacker.png" alt="hacker logo">
+                <h1>Sound like a hacker!</h1>
+            </div>
 
-        <button onclick="transformText()">Transform Text</button>
-
-        <label for="outputText">Output Text:</label>
-        <textarea id="outputText" readonly placeholder="Your transformed text will appear here..."></textarea>
+            <label for="plaintText">Regular Text:</label>
+            <textarea id="plainText" placeholder="Enter your text here..."></textarea>
+            <div class = "button-container">
+                <button onclick="encodeText()">v encode v</button>
+                <button onclick="decodeText()">^ decode ^</button>
+            </div>
+            <label for="leetText">LeetSpeak Text:</label>
+            <textarea id="leetText" placeholder="Your transformed text will appear here..."></textarea>
+        </div>
     </div>
+    <div class="bottom-section">
+
+    </div>
+
 
    
 </body>

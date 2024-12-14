@@ -10,7 +10,7 @@ const leetSpeakDict = {
     I: "1",
     J: "_|",
     K: "|<",
-    L: "1",
+    L: "|_",
     M: "|\\/|",
     N: "|\\|",
     O: "0",
@@ -28,12 +28,16 @@ const leetSpeakDict = {
     };
 
 
-function transformText() {
-    const inputText = document.getElementById('inputText').value;
-    const outputText = inputText.toUpperCase(); // Example transformation
+function encodeText() {
+    const plainText = document.getElementById('plainText').value;
+    const upperText = plainText.toUpperCase(); 
+    document.getElementById('leetText').value = toLeetSpeak(upperText);
+}
 
-
-    document.getElementById('outputText').value = toLeetSpeak(outputText);
+function decodeText() {
+    const leetText = document.getElementById('leetText').value;
+    const plainText = decodeLeetSpeak(leetText);
+    document.getElementById('plainText').value = plainText;
 }
 
 function toLeetSpeak(text) {
