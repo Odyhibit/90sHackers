@@ -29,27 +29,46 @@
 
 body {
     font-family: "Press Start 2P", system-ui;
-    background-color: #252525;
     color: #000080;
     margin: 0;
-}
-.top-section{
     background-image: url("assets/gibson.png");
     background-attachment: fixed;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 100px;
-    height: 800px;
+}
+.top-section{
+    background-image: url("assets/gibson.png");
+    margin: 80px auto;
+    background-attachment: fixed;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .bottom-section{
-    background-color: #252525;
-    background-image: url("assets/hackers_group.png");
-    background-repeat: no-repeat;
-    background-size: fit;
+    margin:auto;
+    display: flex;
     color: #17f3f3;
     text-align: center;
-    height: 1000px;
+    max-width: 1624px;
+}
+.left{
+    flex: 50%;
+    float: left;
+    width: 50%;
+    height: 100%;
+    color: #17f3f3;
+    text-align: center;
+    padding-top: 100px;
+}
+.right{
+    float: right;
+    width: 50%;
+    height: 100%;
+    flex: 50%;
+    color: #17f3f3;
+    text-align: center;
+    padding-top: 100px;
 }
 .press-start-2p-regular {
     font-family: "Press Start 2P", system-ui;
@@ -70,7 +89,13 @@ label{
     padding: 20px;
     box-shadow: 5px 5px 15px #d9e2c1;
 }
-
+.img-container {
+    padding: 20px;
+    margin: 80px auto;
+    width: 600px;
+    padding: 10px;
+    
+}
 .container img{
     display: inline;
     float: left;
