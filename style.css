@@ -11,7 +11,7 @@
 }
 
 .header img {
-    height: 150px;
+    height: 155px;
     object-fit: contain;
     margin-left: 40px;
     margin-right: 40px;
@@ -36,6 +36,7 @@ body {
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    line-height: 1.2;
 }
 .top-section{
     background-image: url("assets/gibson.png");
@@ -103,7 +104,8 @@ label{
 
 textarea {
     font-family: "Press Start 2P", system-ui;
-    width: 100%;
+    width: 90%;
+    padding: 10px;
     height: 100px;
     margin: 10px 0;
     line-height: 2.0;
